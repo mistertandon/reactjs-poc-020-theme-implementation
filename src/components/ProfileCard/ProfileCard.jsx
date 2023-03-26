@@ -6,15 +6,10 @@ import {
   LogoStackoverflow,
   MailOutline,
 } from "react-ionicons";
+import { redirectToSocialAccount } from "./../../utils/helpers";
 import { StickyHeader } from "../StickyHeader";
 
 const ProfileCard = ({ githubUrl, twitterUrl, stackoverflowUrl }) => {
-
-//   const redirectToSocialAccount = (account) => {
-//     switch(account){
-//     case ""
-// }
-// }
   return (
     <article className="profile-card-section--container">
       <section className="general-information__section">
@@ -46,19 +41,19 @@ const ProfileCard = ({ githubUrl, twitterUrl, stackoverflowUrl }) => {
             height="20px"
             width="20px"
             className="social-media__ionicon--github"
-            onClick={() => alert("Hi!")}
+            onClick={() => redirectToSocialAccount(githubUrl)}
           />
           <LogoTwitter
             height="20px"
             width="20px"
             className="social-media__ionicon--twitter"
-            onClick={() => alert("hello")}
+            onClick={() => redirectToSocialAccount(twitterUrl)}
           />
           <LogoStackoverflow
             height="20px"
             width="20px"
             className="social-media__ionicon--stackoverflow"
-            onClick={() => alert("hello")}
+            onClick={() => redirectToSocialAccount(stackoverflowUrl)}
           />
         </div>
         <div className="social-media__section--email">
@@ -66,7 +61,7 @@ const ProfileCard = ({ githubUrl, twitterUrl, stackoverflowUrl }) => {
             height="20px"
             width="20px"
             className="social-media__ionicon--mail"
-            onClick={() => alert("hello")}
+            onClick={() => redirectToSocialAccount()}
           />
           <p>enggparveshtandon@gmail.com</p>
         </div>
