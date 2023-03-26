@@ -13,7 +13,11 @@ const User = () => {
   return (
     <div className="user--container">
       <button onClick={() => changeTheme()}>ChangeTheme</button>Hello from User
-      <ProfileCard />
+      <ProfileCard
+        githubUrl="https://github.com/mistertandon"
+        twitterUrl="https://twitter.com/mistertandon"
+        stackoverflowUrl="https://stackoverflow.com/users/1591753/mistertandon"
+      />
     </div>
   );
 };

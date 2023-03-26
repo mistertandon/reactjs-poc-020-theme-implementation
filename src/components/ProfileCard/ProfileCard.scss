@@ -6,6 +6,8 @@
   width: 420px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  background-color: #f6f8fa;
 
   .general-information__section {
     display: flex;
@@ -18,7 +20,7 @@
   .general-information__section--photo {
     width: 200px;
     height: 200px;
-    border: 2px solid #ADADAD;
+    border: 2px solid #adadad;
     border-radius: 50%;
     overflow: hidden;
     margin-top: 8px;
@@ -82,7 +84,17 @@
     align-content: center;
     align-items: center;
   }
+
+  .social-media__section--email {
+    .social-media__ionicon--mail {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      align-items: center;
+    }
+  }
   .desclaimer__section {
     margin-bottom: 24px;
+    text-align: center;
   }
 }

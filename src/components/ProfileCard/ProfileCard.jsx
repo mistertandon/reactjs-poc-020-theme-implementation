@@ -6,8 +6,15 @@ import {
   LogoStackoverflow,
   MailOutline,
 } from "react-ionicons";
+import { StickyHeader } from "../StickyHeader";
 
-const ProfileCard = () => {
+const ProfileCard = ({ githubUrl, twitterUrl, stackoverflowUrl }) => {
+
+//   const redirectToSocialAccount = (account) => {
+//     switch(account){
+//     case ""
+// }
+// }
   return (
     <article className="profile-card-section--container">
       <section className="general-information__section">
@@ -38,16 +45,19 @@ const ProfileCard = () => {
             color={"#00000"}
             height="20px"
             width="20px"
+            className="social-media__ionicon--github"
             onClick={() => alert("Hi!")}
           />
           <LogoTwitter
             height="20px"
             width="20px"
+            className="social-media__ionicon--twitter"
             onClick={() => alert("hello")}
           />
           <LogoStackoverflow
             height="20px"
             width="20px"
+            className="social-media__ionicon--stackoverflow"
             onClick={() => alert("hello")}
           />
         </div>
@@ -55,15 +65,14 @@ const ProfileCard = () => {
           <MailOutline
             height="20px"
             width="20px"
+            className="social-media__ionicon--mail"
             onClick={() => alert("hello")}
           />
           <p>enggparveshtandon@gmail.com</p>
         </div>
       </section>
-      <section className="desclaimer__section">
-        Parvesh is a Creative innovative person, friendly for collaborating with
-        any team for achieviable Project.
-      </section>
+      <section className="desclaimer__section">Embrace THE SUCK</section>
+      <StickyHeader />
     </article>
   );
 };
