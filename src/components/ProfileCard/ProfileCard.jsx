@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./ProfileCard.scss";
 import {
   LogoGithub,
@@ -8,8 +8,11 @@ import {
 } from "react-ionicons";
 import { redirectToSocialAccount } from "./../../utils/helpers";
 import { StickyHeader } from "../StickyHeader";
+import { ThemeContext } from "../../contexts/ThemeContext";
 
 const ProfileCard = ({ githubUrl, twitterUrl, stackoverflowUrl }) => {
+  const { switchTheme } = useContext(ThemeContext);
+
   return (
     <article className="profile-card-section--container">
       <section className="general-information__section">
@@ -67,7 +70,13 @@ const ProfileCard = ({ githubUrl, twitterUrl, stackoverflowUrl }) => {
         </div>
       </section>
       <section className="desclaimer__section">Embrace THE SUCK</section>
-      <StickyHeader />
+      <StickyHeader
+        uiBlock={() => (
+          <div className="theme__div--toggle">
+            <button onClick={() => switchTheme()}>Change Theme</button>
+          </div>
+        )}
+      />
     </article>
   );
 };

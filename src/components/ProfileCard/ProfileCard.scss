@@ -1,3 +1,5 @@
+@import "./../../index.scss";
+
 .profile-card-section--container {
   padding-left: 35px;
   padding-right: 35px;
@@ -7,7 +9,7 @@
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  background-color: #f6f8fa;
+  background-color: var(--theme-primary);
 
   .general-information__section {
     display: flex;
@@ -96,5 +98,17 @@
   .desclaimer__section {
     margin-bottom: 24px;
     text-align: center;
+  }
+
+  .theme__div--toggle {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: end;
   }
 }

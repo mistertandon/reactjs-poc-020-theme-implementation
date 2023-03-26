@@ -10,7 +10,7 @@ export const ThemeProvider = ({ children }) => {
       case "dark":
         document.documentElement.style.setProperty(
           "--theme-primary",
-          "#0d6efd"
+          "#E5E5FF"
         );
         document.documentElement.style.setProperty(
           "--theme-secondary",
@@ -20,7 +20,7 @@ export const ThemeProvider = ({ children }) => {
       case "light":
         document.documentElement.style.setProperty(
           "--theme-primary",
-          "#589AFD"
+          "#f6f8fa"
         );
         document.documentElement.style.setProperty(
           "--theme-secondary",
