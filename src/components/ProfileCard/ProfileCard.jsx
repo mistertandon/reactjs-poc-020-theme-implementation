@@ -1,5 +1,11 @@
 import React from "react";
 import "./ProfileCard.scss";
+import {
+  LogoGithub,
+  LogoTwitter,
+  LogoStackoverflow,
+  MailOutline,
+} from "react-ionicons";
 
 const ProfileCard = () => {
   return (
@@ -27,9 +33,31 @@ const ProfileCard = () => {
       </section>
       <section className="social-media__section">
         <div className="social-media__section--username">@mistertandon</div>
-        <div className="social-media__section--icon">Icon</div>
+        <div className="social-media__section--icon">
+          <LogoGithub
+            color={"#00000"}
+            height="20px"
+            width="20px"
+            onClick={() => alert("Hi!")}
+          />
+          <LogoTwitter
+            height="20px"
+            width="20px"
+            onClick={() => alert("hello")}
+          />
+          <LogoStackoverflow
+            height="20px"
+            width="20px"
+            onClick={() => alert("hello")}
+          />
+        </div>
         <div className="social-media__section--email">
-          enggparveshtandon@gmail.com
+          <MailOutline
+            height="20px"
+            width="20px"
+            onClick={() => alert("hello")}
+          />
+          <p>enggparveshtandon@gmail.com</p>
         </div>
       </section>
       <section className="desclaimer__section">

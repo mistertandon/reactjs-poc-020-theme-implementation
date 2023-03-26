@@ -4,3 +4,5 @@
 `$ npm install --save-dev scss sass`
 
 `$ npm run dev`
+
+Documentation for react-ionicon https://react-ionicons.netlify.app/

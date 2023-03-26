@@ -1,6 +1,3 @@
-* {
-  border: 1px solid black;
-}
 .profile-card-section--container {
   padding-left: 35px;
   padding-right: 35px;
@@ -21,9 +18,10 @@
   .general-information__section--photo {
     width: 200px;
     height: 200px;
-    background-color: red;
+    border: 2px solid #ADADAD;
     border-radius: 50%;
     overflow: hidden;
+    margin-top: 8px;
     .photo__img {
       width: 100%;
       height: 100%;
@@ -73,6 +71,16 @@
     &:last-child {
       padding-bottom: 5px;
     }
+  }
+  .social-media__section--icon,
+  .social-media__section--email {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 8px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
   }
   .desclaimer__section {
     margin-bottom: 24px;
